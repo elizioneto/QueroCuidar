@@ -1,0 +1,61 @@
+.image {
+  background-image: url('/assets/img/cuidador.jpg');
+  background-size: cover; /* Faz a imagem cobrir todo o background */
+  background-position: center; /* Centraliza a imagem */
+  height: 100vh; /* Ajusta a altura para ocupar toda a viewport */
+  display: flex; /* Ativa o flexbox para facilitar o posicionamento dos elementos */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  justify-content: flex-start; /* Mantém o conteúdo alinhado ao topo */
+}
+
+.titulo {
+  color: #2a8ce2; /* Define a cor do título */
+  font-size: 44px; /* Tamanho grande para o título */
+  font-weight: bold; /* Negrito */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Espaçamento no topo */
+  padding: 10px; /* Adiciona um espaçamento interno */
+}
+
+.Apresentacao-card {
+  background-color: #2a8ce2; /* Cor de fundo azul */
+  color: #fff;
+  padding: 15px; /* Padding interno do card */
+  width: 80%; /* Largura do card (80% da tela) */
+  max-width: 500px; /* Largura máxima para o card */
+  height: auto; /* Altura automática baseada no conteúdo */
+  margin: 20px auto; /* Centraliza o card horizontalmente com margem no topo */
+  border-radius: 10px; /* Bordas arredondadas */
+ }
+
+ion-card-content {
+  font-size: 16px; /* Tamanho da fonte do conteúdo */
+  line-height: 1.5; /* Espaçamento entre as linhas */
+  text-align: justify; /* Justifica o texto */
+}
+
+ion-content {
+  --background: transparent;
+  padding-top: 0;
+
+}
+.imagem-card {
+  background-color: #2a8ce2;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 10px;
+
+}
+
+.image-container {
+  display: flex; /* Dispor as imagens em linha */
+  justify-content: space-around; /* Espaço igual entre as imagens */
+}
+
+.image-item {
+  width: 48%; /* Cada imagem ocupa 45% do espaço */
+  border-radius: 10px; /* Imagens com bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve nas imagens */
+}
