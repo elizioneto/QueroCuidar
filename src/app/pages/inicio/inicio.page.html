@@ -1,27 +1,36 @@
 <ion-content fullscreen>
   <div class="image">
-
     <h1 class="titulo">QueroCuidar</h1>
-
 
     <ion-card class="Apresentacao-card">
       <ion-card-content>
-          Bem-vindo ao Quero Cuidar<br><br>
-          O Quero Cuidar facilita a busca e o cadastro de cuidadores de idosos. Nossa plataforma conecta famílias a profissionais qualificados, tornando mais fácil encontrar o cuidado certo para quem você ama.
-          Com uma navegação simples, você pode encontrar cuidadores de acordo com suas necessidades e localidade. Cuidadores também podem cadastrar seus serviços e oferecer seus cuidados.
-          Quero Cuidar: Conectando quem cuida com quem precisa.
+        Bem-vindo ao Quero Cuidar<br><br>
+        O Quero Cuidar facilita a busca e o cadastro de cuidadores de idosos. Nossa plataforma conecta famílias a profissionais qualificados, tornando mais fácil encontrar o cuidado certo para quem você ama.
+        Com uma navegação simples, você pode encontrar cuidadores de acordo com suas necessidades e localidade. Cuidadores também podem cadastrar seus serviços e oferecer seus cuidados.
+        Quero Cuidar: Conectando quem cuida com quem precisa.
       </ion-card-content>
     </ion-card>
 
     <ion-card class="imagem-card">
       <ion-card-content>
         <div class="image-container">
-          <img src="/assets/img/idoso.jpg" alt="Imagem 1" class="image-item">
-          <img src="/assets/img/cuidador1.jpg" alt="Imagem 2" class="image-item">
+          <!-- Primeiro card com link -->
+          <ion-router-link routerLink="/cadastro-cuidador" class="image-item">
+            <img src="/assets/img/idoso.jpg" alt="Imagem 1">
+            <div class="text-overlay">
+              Ofereça seus serviços de cuidador de idosos. Cadastre-se agora!
+            </div>
+          </ion-router-link>
+
+          <!-- Segundo card com link -->
+          <ion-router-link routerLink="/login-cuidador" class="image-item">
+            <img src="/assets/img/cuidador2.jpg" alt="Imagem 2">
+            <div class="text-overlay">
+              Encontre cuidadores qualificados perto de você. Simples e rápido!
+            </div>
+          </ion-router-link>
         </div>
       </ion-card-content>
     </ion-card>
-
-
   </div>
 </ion-content>
