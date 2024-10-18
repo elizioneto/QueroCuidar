@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'login-cuidador',
     loadChildren: () => import('./pages/login-cuidador/login-cuidador.module').then( m => m.LoginCuidadorPageModule)
   },
+  {
+    path: 'login-idoso',
+    loadChildren: () => import('./pages/login-idoso/login-idoso.module').then( m => m.LoginIdosoPageModule)
+  },
 ];
 
 @NgModule({
