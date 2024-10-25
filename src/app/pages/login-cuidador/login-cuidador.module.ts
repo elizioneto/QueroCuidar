@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { LoginCuidadorPageRoutingModule } from './login-cuidador-routing.module';
 
 import { LoginCuidadorPage } from './login-cuidador.page';
+import { HeadComponent } from 'src/app/componentes/head/head.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginCuidadorPageRoutingModule
+    LoginCuidadorPageRoutingModule,
+    HeadComponent
   ],
-  declarations: [LoginCuidadorPage]
+  declarations: [LoginCuidadorPage, HeadComponent]
 })
 export class LoginCuidadorPageModule {}
