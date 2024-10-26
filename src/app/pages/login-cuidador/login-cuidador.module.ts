@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
+import { LoginCuidadorPage } from './login-cuidador.page';
+import { SharedModule } from '../../shared/shared.module'; // Caminho para o SharedModule
 import { LoginCuidadorPageRoutingModule } from './login-cuidador-routing.module';
 
-import { LoginCuidadorPage } from './login-cuidador.page';
-import { HeadComponent } from 'src/app/componentes/head/head.component';
 
 @NgModule({
   imports: [
@@ -15,8 +13,8 @@ import { HeadComponent } from 'src/app/componentes/head/head.component';
     FormsModule,
     IonicModule,
     LoginCuidadorPageRoutingModule,
-    HeadComponent
+    SharedModule
   ],
-  declarations: [LoginCuidadorPage, HeadComponent]
+  declarations: [LoginCuidadorPage]
 })
 export class LoginCuidadorPageModule {}

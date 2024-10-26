@@ -1,36 +1,40 @@
 <ion-content fullscreen>
-  <div class="image">
-    <h1 class="titulo">QueroCuidar</h1>
+  <div class="container">
+    <div class="logo-wrapper">
+      <img src="/assets/img/logo.jpeg" alt="Logo Quero Cuidar" class="logo">
+    </div>
 
-    <ion-card class="Apresentacao-card">
+    <ion-card class="apresentacao-card">
       <ion-card-content>
-        Bem-vindo ao Quero Cuidar<br><br>
-        O Quero Cuidar facilita a busca e o cadastro de cuidadores de idosos. Nossa plataforma conecta famílias a profissionais qualificados, tornando mais fácil encontrar o cuidado certo para quem você ama.
-        Com uma navegação simples, você pode encontrar cuidadores de acordo com suas necessidades e localidade. Cuidadores também podem cadastrar seus serviços e oferecer seus cuidados.
-        Quero Cuidar: Conectando quem cuida com quem precisa.
+        <p>Bem-vindo ao Quero Cuidar</p>
+        <p>
+          O Quero Cuidar facilita a busca e o cadastro de cuidadores de idosos. Nossa plataforma conecta famílias a
+          profissionais qualificados, tornando mais fácil encontrar o cuidado certo para quem você ama. Com uma
+          navegação simples, você pode encontrar cuidadores de acordo com suas necessidades e localidade.
+        </p>
+        <p>
+          Cuidadores também podem cadastrar seus serviços e oferecer seus cuidados. Quero Cuidar: Conectando quem cuida
+          com quem precisa.
+        </p>
       </ion-card-content>
     </ion-card>
 
-    <ion-card class="imagem-card">
-      <ion-card-content>
-        <div class="image-container">
-          <!-- Primeiro card com link -->
-          <ion-router-link routerLink="/login-idoso" class="image-item">
-            <img src="/assets/img/idoso.jpg" alt="Imagem 1">
-            <div class="text-overlay">
-              Ofereça seus serviços de cuidador de idosos. Cadastre-se agora! [Clique Aqui]
-            </div>
-          </ion-router-link>
-
-          <!-- Segundo card com link -->
-          <ion-router-link routerLink="/login-cuidador" class="image-item">
-            <img src="/assets/img/cuidador2.jpg" alt="Imagem 2">
-            <div class="text-overlay">
-              Encontre cuidadores qualificados perto de você. Simples e rápido! [Clique Aqui]
-            </div>
-          </ion-router-link>
+    <div class="image-container">
+      <ion-router-link routerLink="/login-idoso" class="image-item idoso-card">
+        <div class="text-overlay">
+          Ofereça seus serviços de cuidador de idosos. Cadastre-se agora!
+          <ion-icon name="chevron-down-outline"></ion-icon><br> 
+          <span class="clique-aqui">[Clique Aqui]</span>
         </div>
-      </ion-card-content>
-    </ion-card>
+      </ion-router-link>
+
+      <ion-router-link routerLink="/login-cuidador" class="image-item cuidador-card">
+        <div class="text-overlay">
+          Encontre cuidadores qualificados perto de você. Simples e rápido!
+          <ion-icon name="chevron-down-outline"></ion-icon><br>
+          <span class="clique-aqui">[Clique Aqui]</span>
+        </div>
+      </ion-router-link>
+    </div>
   </div>
 </ion-content>

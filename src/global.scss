@@ -35,3 +35,9 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+/* Define a imagem de fundo para todas as páginas */
+ion-content {
+    --background: url('/assets/img/idoso.jpg') no-repeat center center / cover;
+    /* Alternativamente, ajuste o tamanho para o efeito desejado */
+  }
+  

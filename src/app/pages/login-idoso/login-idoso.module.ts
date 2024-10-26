@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { LoginIdosoPageRoutingModule } from './login-idoso-routing.module';
 
 import { LoginIdosoPage } from './login-idoso.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginIdosoPageRoutingModule
+    LoginIdosoPageRoutingModule,
+    SharedModule
   ],
   declarations: [LoginIdosoPage]
 })

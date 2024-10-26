@@ -1,0 +1,63 @@
+/* Container principal */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Estilização do card de login com transparência e sombra */
+  .login-card {
+    background-color: rgba(19, 19, 20, 0.9); /* Fundo branco com transparência */
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 90%;
+    max-width: 380px;
+    padding: 25px;
+  }
+  
+  /* Campos de entrada com borda e estilo mais elegante */
+  .login-input {
+    --background: transparent;
+    --highlight-color-focused: #007aff;
+    border-bottom: 1px solid #007aff; /* Linha inferior azul */
+    margin-top: 10px;
+  }
+  
+  ion-label {
+    color: #007aff; /* Azul para o texto "E-Mail" e "Senha" */
+    font-weight: 500;
+  }
+  
+  ion-input {
+    color: #000;
+    --placeholder-color: #999; /* Placeholder em cinza claro */
+  }
+  
+  /* Botão de Login com gradiente e bordas arredondadas */
+  .login-button {
+    --background: linear-gradient(45deg, #007aff, #005bb5); /* Gradiente azul */
+    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 122, 255, 0.4); /* Sombra suave */
+  }
+  
+  /* Link para criar nova conta */
+  .criar-conta {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .criar-conta a {
+    color: #d9534f; /* Vermelho suave */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .criar-conta a:hover {
+    color: #c9302c; /* Cor mais intensa no hover */
+  }
+  

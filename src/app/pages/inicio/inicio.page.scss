@@ -1,69 +1,95 @@
-.image {
-  background-image: url('/assets/img/cuidador.jpg');
+/* Container principal com imagem de fundo cobrindo toda a tela */
+.container {
+  background-image: url('/assets/img/cuidador2.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.titulo {
-  color: #2a8ce2;
-  font-size: 44px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.Apresentacao-card {
-  background-color: #2a8ce2;
-  color: #fff;
-  padding: 15px;
-  width: 80%;
-  max-width: 500px;
-  margin: 20px auto;
-  border-radius: 10px;
-  text-align: justify;
-}
-
-.imagem-card {
-  background-color: transparent;
-  width: 80%;
-  max-width: 500px;
-  margin: 20px auto;
-}
-
-.image-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.image-item {
+  min-height: 100vh;
+  padding: 20px;
+  color: #004080;
   position: relative;
-  width: 48%;
 }
 
-.image-item img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.text-overlay {
-  position: absolute;
-  top: 0; /* Cobre desde o topo */
-  left: 0;
-  right: 0;
-  bottom: 0; /* Cobre até o final */
-  background: rgba(2, 137, 234, 0.5); /* Fundo semitransparente que cobre o card todo */
-  color: white;
+/* Wrapper para centralizar e esticar a logo */
+.logo-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  text-align: center;
-  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
+/* Estilização da logo para esticar um pouco mais */
+.logo {
+  width: 200px;
+  height: auto;
+}
 
+/* Card de apresentação com tamanho aumentado */
+.apresentacao-card {
+  background-color: rgba(224, 247, 250, 0.8);
+  color: #004d40;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+/* Container para os cards com links */
+.image-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Estilização para os cards com imagens de fundo e tamanho maior */
+.image-item {
+  flex: 1;
+  height: 200px;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+/* Ajuste das imagens de fundo dos cards menores */
+.idoso-card {
+  background-image: url('/assets/img/idoso.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cuidador-card {
+  background-image: url('/assets/img/cuidador2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilização do texto e ícone sobre os cards com sombra completa */
+.text-overlay {
+  position: absolute; /* Torna a camada de sobreposição completa */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente que cobre todo o card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+  border-radius: 12px; /* Mantém o mesmo arredondamento dos cards */
+}
+
+/* Estilo de destaque para o texto "[Clique Aqui]" em azul */
+.clique-aqui {
+  color: #007acc; /* Cor azul */
+  font-weight: bold;
+  font-size: 1.1em;
+}
